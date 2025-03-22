@@ -32,9 +32,10 @@ pip install pyobjc
 ```
 
 #### Google Cloud API Key
-Follow Google Cloud Vision setup here: https://cloud.google.com/vision/docs/setup
+Follow Google Cloud setup here: https://developers.google.com/workspace/guides/get-started
 Download the API_KEY and put it in ```./utils/google_service_token.json```
 
 ## Usage
 
 ## License
+The MIT Licence applies to this project. Refer to LICENSE.md
