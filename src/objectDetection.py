@@ -6,7 +6,7 @@ import numpy as np
 from google.cloud import vision
 
 # Set credentials (update the path as needed)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/bryant.ruan/Desktop/GenAI Genesis/utils/power-workhorse-key.json"    
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/bryant.ruan/Desktop/GenAI Genesis/utils/google_service_token.json"    
 
 # Initialize Google Cloud Vision client
 client = vision.ImageAnnotatorClient()

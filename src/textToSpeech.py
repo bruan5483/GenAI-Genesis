@@ -9,7 +9,7 @@ from playsound import playsound
 import objectDetection
 
 # Set credentials (update the path if needed)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/bryant.ruan/Desktop/GenAI Genesis/utils/power-workhorse-key.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/bryant.ruan/Desktop/GenAI Genesis/utils/google_service_token.json"
 
 # Initialize Google Cloud Text-to-Speech client
 tts_client = texttospeech.TextToSpeechClient()
