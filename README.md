@@ -12,7 +12,7 @@ For this project, you will need:
 #### Clone repository
 ```
 git clone https://github.com/bruan5483/GenAI-Genesis.git
-cd GenAI Genesis
+cd GenAI-Genesis
 ```
 
 #### Create Python venv
@@ -29,7 +29,6 @@ pip install google-cloud-vision
 pip install google-cloud-texttospeech
 pip install google-cloud-aiplatform
 pip install playsound==1.2.2
-pip install pyobjc
 ```
 
 #### Google Cloud API Key
