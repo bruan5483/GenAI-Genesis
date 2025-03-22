@@ -18,13 +18,19 @@ _lock = threading.Lock()
 
 def detection_loop():
     global _latest_frame, _focused_object
+    #print("[Object Detection] Starting detection loop...")
     cap = cv2.VideoCapture(0)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)  # Faster processing resolution
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     
+    if not cap.isOpened():
+        print("[Error] Camera failed to initialize!")
+        return
+    
     while cap.isOpened():
         ret, frame_read = cap.read()
         if not ret:
+            print("[Error] Failed to read frame from camera.")
             break
         
         # Resize frame and update shared variable
@@ -50,13 +56,18 @@ def detection_loop():
         
         with _lock:
             _focused_object = best_object
+
+        # if best_object:
+        #     print(f"[Object Detection] Focused object: {best_object.name} (Confidence: {best_object.score})")
         
-        time.sleep(0.5)  # Slow down API calls
+        time.sleep(1)  # Slow down API calls
     
     cap.release()
+    print("[Object Detection] Camera feed stopped.")
 
 def start_detection():
     """Starts the detection loop in a background thread."""
+    #print("[Object Detection] Starting object detection thread...")
     thread = threading.Thread(target=detection_loop, daemon=True)
     thread.start()
     return thread

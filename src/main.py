@@ -2,14 +2,22 @@ import time
 import cv2
 import objectDetection
 import textToSpeech
+import gemini
+import threading
 
 def main():
-    # Start the object detection and TTS loops
+    #print("Starting system...")
+
     detection_thread = objectDetection.start_detection()
+    #print("Object detection started.")
+
     tts_thread = textToSpeech.start_tts_loop()
-    
-    # Create a window in the main thread for display
-    cv2.namedWindow("Focused Object Detection", cv2.WINDOW_NORMAL)
+    #print("Text-to-speech started.")
+
+    gemini_thread = gemini.start_gemini_loop()
+    #print("Gemini processing started.")
+
+    #print("System initialized. Processing video feed...")
     
     while True:
         frame = objectDetection.get_latest_frame()
@@ -17,20 +25,18 @@ def main():
             focused_object = objectDetection.get_focused_object()
             if focused_object:
                 name = focused_object.name
-                vertices = [(int(v.x * frame.shape[1]), int(v.y * frame.shape[0]))
-                            for v in focused_object.bounding_poly.normalized_vertices]
-                if len(vertices) == 4:
-                    cv2.rectangle(frame, vertices[0], vertices[2], (0, 255, 0), 2)
-                    cv2.putText(frame, name, (vertices[0][0], vertices[0][1]-10),
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
+                #print(f"[Main] Detected: {name}")
+            
             cv2.imshow("Focused Object Detection", frame)
-        
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-        
-        time.sleep(0.03)  # Small delay for stability
-    
-    cv2.destroyAllWindows()
 
-if __name__ == '__main__':
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            print("Exiting system...")
+            break
+
+        time.sleep(0.03)
+
+    cv2.destroyAllWindows()
+    print("Windows destroyed. Exiting.")
+
+if __name__ == "__main__":
     main()
