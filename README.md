@@ -1,14 +1,27 @@
-# GenAI-Genesis
+# Tourism Information Machine (T.I.M): Making Tourism Accessible for All
 
-## Description
-A Hackathon Project
+T.I.M is a platform that allows you to explore new or faraway locations with confidence! 
+
+Submitted to GenAI Genesis 2025!
+
+----------------------------------LOGO HERE----------------------------------
+
+## About The Project
+Have you ever been ...
+
+### Built With
+Here are the major languages/technologies we used for creating our project:
+- [Python](https://www.python.org/)
+- [Gemini](https://ai.google.dev/)
+- [Google Cloud](https://cloud.google.com/)
+- [OpenCV](https://opencv.org/)
 
 ## Installation
-For this project, you will need:
+This project utilizes the following:
 - Raspberry Pi (Raspbian)
 - USB Webcamera
-- Battery
-- Case
+- Portable Battery
+- Case for Raspberry Pi 
 
 #### Clone repository
 ```
@@ -37,7 +50,18 @@ pip install pygame
 Follow Google Cloud setup here: https://developers.google.com/workspace/guides/get-started
 Download the API_KEY and put it in ```./utils/google_service_token.json```
 
-## Usage
+## Our Story
 
 ## License
-The MIT Licence applies to this project. Refer to LICENSE.md
+Distributed under the MIT License. Refer to ```LICENSE.md``` for more information.
+
+## Contact
+If you would like to find out more information about our project, feel free to reach out to us on LinkedIn:
+- Bryant Ruan - [LinkedIn](https://www.linkedin.com/in/bryant-ruan/) - b3ruan@uwaterloo.ca
+- Gabe Singaraja - [LinkedIn](https://www.linkedin.com/in/gabe-singaraja-a74785266/) - g2singar@uwaterloo.ca
+- Jonathan Zhao - [LinkedIn](https://www.linkedin.com/in/jonathan-zhao-208616325/) - j89zhao@uwaterloo.ca
+- Joy Jia - [LinkedIn](https://www.linkedin.com/in/joyyjiaa/) - j56jia@uwaterloo.ca
+
+To see our submission to [GenAI Genesis 2025](https://genai-genesis-2025.devpost.com/), feel free to check out our Devpost! 
+
+## REMEMBER TO ADD LINK TO DEVPOST
