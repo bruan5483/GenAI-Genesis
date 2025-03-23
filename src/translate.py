@@ -109,4 +109,5 @@ def capture_and_translate():
     cap.release()
     cv2.destroyAllWindows()
 
-capture_and_translate()
+if __name__ == "__main__":
+    capture_and_translate()

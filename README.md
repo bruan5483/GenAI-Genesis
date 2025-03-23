@@ -27,7 +27,7 @@ This project utilizes the following:
 #### Clone repository
 ```
 git clone https://github.com/bruan5483/GenAI-Genesis-2025.git
-cd GenAI-Genesis
+cd GenAI-Genesis-2025
 ```
 
 #### Create Python venv
