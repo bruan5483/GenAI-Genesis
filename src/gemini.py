@@ -62,7 +62,7 @@ def gemini_loop():
         # Check for famous landmarks
         landmark_description = prompt.generate_text(caption_text)
 
-        if landmark_description != "No landmark found":
+        if landmark_description != "No landmark found.":
             print(f"[Gemini] Landmark Detected: {landmark_description}")
 
             # Store the caption in a shared variable
