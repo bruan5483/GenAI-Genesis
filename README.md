@@ -4,7 +4,7 @@ T.I.M is a platform that allows you to explore new or faraway locations with con
 
 Submitted to GenAI Genesis 2025!
 
-[![T.I.M](logo.png)](https://github.com/bruan5483/GenAI-Genesis)
+[![T.I.M](logo.png)](https://github.com/bruan5483/GenAI-Genesis-2025)
 
 ## About The Project
 Have you ever been ...
@@ -26,7 +26,7 @@ This project utilizes the following:
 
 #### Clone repository
 ```
-git clone https://github.com/bruan5483/GenAI-Genesis.git
+git clone https://github.com/bruan5483/GenAI-Genesis-2025.git
 cd GenAI-Genesis
 ```
 
