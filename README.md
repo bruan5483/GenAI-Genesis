@@ -29,6 +29,7 @@ pip install google-cloud-vision
 pip install google-cloud-texttospeech
 pip install google-cloud-aiplatform
 pip install playsound==1.2.2
+pip install pygame
 ```
 
 #### Google Cloud API Key
