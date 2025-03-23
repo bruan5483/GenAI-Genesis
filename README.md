@@ -1,4 +1,4 @@
-# Tourism Information Machine (T.I.M): Making Tourism Accessible for All
+# Tourist Information Machine (T.I.M)
 
 T.I.M is a platform that allows you to explore new or faraway locations with confidence! 
 
