@@ -4,7 +4,7 @@ T.I.M is a platform that allows you to explore new or faraway locations with con
 
 Submitted to GenAI Genesis 2025!
 
-----------------------------------LOGO HERE----------------------------------
+[![T.I.M](logo.png)](https://github.com/bruan5483/GenAI-Genesis)
 
 ## About The Project
 Have you ever been ...
@@ -15,6 +15,7 @@ Here are the major languages/technologies we used for creating our project:
 - [Gemini](https://ai.google.dev/)
 - [Google Cloud](https://cloud.google.com/)
 - [OpenCV](https://opencv.org/)
+- [Flask](https://flask.palletsprojects.com/en/stable/)
 
 ## Installation
 This project utilizes the following:
@@ -37,11 +38,14 @@ source ./venv/bin/activate
 
 #### Dependencies
 ```
+pip install flask
 pip install numpy
 pip install opencv-python-headless
 pip install google-cloud-vision
 pip install google-cloud-texttospeech
 pip install google-cloud-aiplatform
+pip install google-cloud-translate
+pip install pillow
 pip install playsound==1.2.2
 pip install pygame
 ```
