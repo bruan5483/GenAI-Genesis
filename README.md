@@ -6,8 +6,9 @@ A Hackathon Project
 ## Installation
 For this project, you will need:
 - Raspberry Pi (Raspbian)
-- ArduCam Module for Raspberry Pi
-- Micro-HDMI to HDMI Cable
+- USB Webcamera
+- Battery
+- Case
 
 #### Clone repository
 ```
